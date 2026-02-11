@@ -77,12 +77,24 @@ def get_stats():
     read_mb_s, write_mb_s = get_disk_io()
     recv_mb_s, sent_mb_s = get_network_io()
 
+    # Load averages (1m, 5m, 15m)
+    load1, load5, load15 = os.getloadavg()
+    cores = os.cpu_count() or 1
+
+    cpu_pressure_1m = (load1 / cores) * 100.0
+    cpu_pressure_5m = (load5 / cores) * 100.0
+    cpu_pressure_15m = (load15 / cores) * 100.0
+
     return {
         "cpu": psutil.cpu_percent() / 100,
         "memory_percent": psutil.virtual_memory().percent / 100,
         "temp": psutil.sensors_temperatures().get("cpu_thermal", [])[0].current if "cpu_thermal" in psutil.sensors_temperatures() else 0,
         "uptime_human": get_uptime(),
-        "load_avg": ", ".join([f"{x:.2f}" for x in os.getloadavg()]),
+        "load_avg": f"{load1:.2f}, {load5:.2f}, {load15:.2f}",
+        "cpu_cores": cores,
+        "cpu_pressure_1m": round(cpu_pressure_1m, 1),
+        "cpu_pressure_5m": round(cpu_pressure_5m, 1),
+        "cpu_pressure_15m": round(cpu_pressure_15m, 1),
         "fan_rpm": fan_rpm,
         "cpu_freq": cpu_freq,
         "disk_usage_percent": disk_usage_percent,
