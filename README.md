@@ -31,7 +31,9 @@ All you need for Raspberry Pi 5 monitoring.
 - Socket.IO WebSocket updates
 - Bootstrap 5 + dark mode styling
 - Optional floating stat indicators
-
+- CPU Pressure (%) normalized to 1-minute load based on core count
+- Dynamic CPU load status badge (OK / BUSY / OVERLOADED)
+  
 ---
 
 ## 📦 Requirements
