@@ -62,7 +62,10 @@ The goal of this project is to provide a visually modern and extensible dashboar
 ## 🛠️ Installation
 
 ```bash
-# Clone the repo
+# Connect to your PI so that you can issue commands
+SSH to Pi if using another device on your netowrk (like a PC) or remote into Pi and use local terminal
+
+# Clone the repo (Pi-Monitor directory will be created in the current directory the command is being ran from)
 git clone https://github.com/g1forfun/Pi-Monitor.git
 cd Pi-Monitor
 
@@ -75,3 +78,6 @@ pip install -r requirements.txt
 
 # Run it
 python app.py
+
+# Access the Web Dashboard
+In your browser http://<Your PI's IP>:5000
