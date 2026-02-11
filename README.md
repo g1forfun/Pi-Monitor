@@ -6,14 +6,16 @@
 ⭐️ If you like this project, give it a star!
 
 A real-time system monitoring dashboard built for the Raspberry Pi 5, using **Flask**, **Socket.IO**, and **Chart.js**. Tracks key performance metrics including CPU usage, memory, temperature, fan speed, network I/O, disk activity, and PMIC power draw — all in a sleek, dark-themed UI.
-All you need for Raspberry Pi 5 monitoring.
 
 ---
 
 ## 📸 Screenshot
-![Image](https://github.com/user-attachments/assets/39701724-cd86-4025-8676-d90e1f1b3896)
+<div align="center">
+  <img width="804" height="861" src="https://github.com/user-attachments/assets/617173ff-9d72-4554-ac57-31de9667edd1" />
+</div>
 
 ---
+
 
 ## 🚀 Features
 
@@ -51,15 +53,15 @@ This dashboard is built with efficiency in mind:
 
 RAM Usage: Typically under 100MB total, including the Python runtime, Flask server, and WebSocket background updates.
 
-CPU Impact: Negligible — system stats are fetched periodically with lightweight tools like psutil, avoiding constant polling or heavy shell loops.
+CPU Impact: Negligible. System stats are fetched periodically with lightweight tools like psutil, avoiding constant polling or heavy shell loops.
 
-Zero bloat: No heavy frameworks or services — just HTML, Bootstrap, Chart.js, and a minimal Flask backend.
+Zero bloat: No heavy frameworks or services. Just HTML, Bootstrap, Chart.js, and a minimal Flask backend.
 
 Headless-optimized: Ideal for headless Raspberry Pi boards, even those with limited memory.
 
 Self-cleaning: No background daemons, logs, or databases to maintain. All data is stored in memory and automatically resets on reboot.
 
-The goal of this project is to provide a visually modern and extensible dashboard that stays well within the performance envelope of even a 2GB Pi board — while being easy to expand for custom use cases like Pi-hole stats, power monitoring, or even LLM integrations.
+The goal of this project is to provide a visually modern and extensible dashboard that stays well within the performance envelope of even a 2GB Pi board, while being easy to expand for custom use cases like Pi-hole stats, power monitoring, or even LLM integrations.
 
 ## 🛠️ Installation
 
