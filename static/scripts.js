@@ -53,7 +53,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const cpuChart = new Chart(document.getElementById("cpuChart"), chartConfig("CPU Usage (%)", "#0d6efd"));
   const memChart = new Chart(document.getElementById("memChart"), chartConfig("Memory Usage (%)", "#6610f2"));
-  const tempChart = new Chart(document.getElementById("tempChart"), chartConfig("CPU Temp (°C)", "#dc3545"));
+  const tempChart = new Chart(document.getElementById("tempChart"), chartConfig("TEMP TEST CPU Temp (\u00B0C)", "#dc3545"));
   const fanChart  = new Chart(document.getElementById("fanChart"), chartConfig("Fan Speed (RPM)", "#0dcaf0"));
   const freqChart = new Chart(document.getElementById("freqChart"), chartConfig("CPU Frequency (MHz)", "#f39c12"));
   const gpuFreqChart = new Chart(document.getElementById("gpuFreqChart"), chartConfig("GPU Frequency (MHz)", "#fd7e14"));
