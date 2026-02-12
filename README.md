@@ -11,10 +11,11 @@ A real-time system monitoring dashboard built for the Raspberry Pi 5, using **Fl
 
 ## 📸 Screenshot
 <div align="center">
-  <img width="804" height="861" src="https://github.com/user-attachments/assets/617173ff-9d72-4554-ac57-31de9667edd1" />
+  <img width="949" height="951" alt="firefox_I4ee3QX8ul" src="https://github.com/user-attachments/assets/f9bee493-b9a9-4235-b495-027c7e42844c" />
 </div>
 
 ---
+
 
 
 ## 🚀 Features
