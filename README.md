@@ -86,3 +86,8 @@ python app.py
 
 # Access the Web Dashboard
 In your browser http://<Your PI's IP>:5000
+
+# Recommendations
+Setup the app.py to run as a service using SystemD and enable autostart on boot
+Now you have a dashboard that is always running silently in the background!
+
