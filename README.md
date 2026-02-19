@@ -88,6 +88,7 @@ python app.py
 In your browser http://<Your PI's IP>:5000
 
 # Recommendations
-Setup the app.py to run as a service using SystemD and enable autostart on boot
+-Setup the app.py to run as a service using SystemD and enable autostart on boot
 Now you have a dashboard that is always running silently in the background!
+-Open port 5000 if you are using a firewall on your Pi to access the dashboard from other devices on your network!
 
